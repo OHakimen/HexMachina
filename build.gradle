@@ -62,11 +62,12 @@ dependencies {
     modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-block:${project.cca_version}"
     modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-item:${project.cca_version}"
 
-    modImplementation "blank:serialization-hooks:0.4.99999"
-
     modApi "com.samsthenerd.inline:inline-fabric:${project.inline_version}"
 
     modApi "me.shedaniel.cloth:cloth-config-fabric:11.1.136"
+
+    modCompileOnly "dev.emi:trinkets:${project.trinkets_version}"
+    modLocalRuntime "dev.emi:trinkets:${project.trinkets_version}"
 }
 
 processResources {
